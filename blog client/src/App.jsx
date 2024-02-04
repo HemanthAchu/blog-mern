@@ -7,6 +7,8 @@ import Singup from './pages/Singup'
 import Dashboard from './pages/Dashboard'
 import Projects from './pages/Projects'
 import Header from './Components/Header'
+import Footers from './Components/Footer'
+import CreatePost from './pages/CreatePost'
 
 function App() {
   
@@ -21,7 +23,9 @@ function App() {
       <Route path='/sign-up' element={<Singup/>} />
       <Route path='/dashboard' element={<Dashboard/>} />
       <Route path='/projects' element={<Projects/>} />
+      <Route path='/createpost' element={<CreatePost/>} />
     </Routes>
+    <Footers/>
     </BrowserRouter>
   )
 }
